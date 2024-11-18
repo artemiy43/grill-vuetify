@@ -102,7 +102,7 @@
 </template>
 
 <script lang="ts" setup>
-  import { addresses, images, sales } from '@/utils/constants.ts'
+  import { addresses, images, sales } from '@/utils/constants'
 </script>
 
 <style lang="css" scoped>

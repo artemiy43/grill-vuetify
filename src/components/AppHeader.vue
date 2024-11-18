@@ -29,11 +29,9 @@
       <v-list-item
         v-for="(item, i) in linksList"
         :key="i"
-        prepend-icon
+        :prepend-icon="item.icon"
         :to="item.to"
       >
-        <v-icon :icon="item.icon" />
-
         <v-list-item-title>{{ item.title }}</v-list-item-title>
       </v-list-item>
     </v-list>
@@ -43,7 +41,7 @@
 <script setup lang="ts">
   import { useTheme } from 'vuetify'
   import { ref } from 'vue'
-  import { linksList } from '@/utils/constants.ts'
+  import { linksList } from '@/utils/constants'
   // import { linksList } from ''
 
   const theme = useTheme()
