@@ -1,0 +1,33 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+.section-big {
+  width: 100%;
+  height: 80vh;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.section-medium {
+  width: 100%;
+  height: 60vh;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.section-small {
+  width: 100%;
+  height: 40vh;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
