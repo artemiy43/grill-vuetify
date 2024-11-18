@@ -7,7 +7,7 @@
       :key="drink.id"
       class="line"
     >
-      <v-row justify="space-between" class="pa-4">
+      <v-row class="pa-4" justify="space-between">
         <v-card-item>
           <v-card-title>
             {{ drink.name }}
@@ -22,11 +22,11 @@
           </v-card-subtitle>
         </v-card-item>
       </v-row>
-      <v-divider></v-divider>
+      <v-divider />
     </v-card>
     <h3 class="text-center">Алкогольные</h3>
     <v-card v-for="drink in store.drinks.alcohol" :key="drink.id" class="line">
-      <v-row justify="space-between" class="pa-4">
+      <v-row class="pa-4" justify="space-between">
         <v-card-item>
           <v-card-title>
             {{ drink.name }}
@@ -41,12 +41,12 @@
           </v-card-subtitle>
         </v-card-item>
       </v-row>
-      <v-divider></v-divider>
+      <v-divider />
     </v-card>
   </v-list>
 </template>
 
 <script setup lang="ts">
-import { useAppStore } from "@/stores/app";
-const store = useAppStore();
+  import { useAppStore } from '@/stores/app'
+  const store = useAppStore()
 </script>
